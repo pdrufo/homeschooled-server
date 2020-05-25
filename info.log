@@ -1,2 +1,33 @@
 {"message":"schoolLog with id 5 has been created.","level":"info"}
 {"message":"schoolLog with id 5 deleted","level":"info"}
+{"message":"schoolLog with id 123456 not found","level":"error"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"schoolLog with id 1 has been created.","level":"info"}
+{"message":"schoolLog with id 123456 not found","level":"error"}
+{"message":"schoolLog with id 123456 not found","level":"error"}
+{"message":"schoolLog with id 123456 not found","level":"error"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"schoolLog with id 1 has been created.","level":"info"}
+{"message":"schoolLog with id 123456 not found","level":"error"}
+{"message":"schoolLog with id 123456 not found","level":"error"}
+{"message":"schoolLog with id 123456 not found","level":"error"}
+{"message":"schoolLog with id 1 has been created.","level":"info"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"school_date, student, english, math, specialty, notes are required","level":"error"}
+{"message":"schoolLog with id 1 has been created.","level":"info"}
+{"message":"schoolLog with id 123456 not found","level":"error"}
+{"message":"schoolLog with id 123456 not found","level":"error"}
