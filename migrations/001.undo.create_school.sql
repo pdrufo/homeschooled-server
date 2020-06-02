@@ -1,3 +1,4 @@
-DROP TABLE IF EXISTS school;
+DROP TABLE IF EXISTS entries;
+DROP TABLE IF EXISTS users;
 
 

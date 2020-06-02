@@ -1,25 +1,53 @@
 const schoolService = {
   getAllSchoolLogs(knex) {
-    return knex.select("*").from("school");
+    return knex
+      .from("entries AS e")
+      .select(
+        "e.id",
+        "e.users_id",
+        "e.school_date",
+        "e.math",
+        "e.english",
+        "e.specialty",
+        "e.notes",
+        "u.first_name",
+        "u.last_name"
+      )
+      .innerJoin("users AS u", "e.users_id", "u.id");
   },
 
   insertSchoolLog(db, newSchoolLog) {
     return db
       .insert(newSchoolLog)
-      .into("school")
+      .into("entries")
       .returning("*")
       .then((rows) => {
         return rows[0];
       });
   },
   getById(db, id) {
-    return db.select("*").from("school").where("id", id).first();
+    return db
+      .select(
+        "e.id",
+        "e.users_id",
+        "e.school_date",
+        "e.math",
+        "e.english",
+        "e.specialty",
+        "e.notes",
+        "u.first_name",
+        "u.last_name"
+      )
+      .from("entries AS e")
+      .innerJoin("users AS u", "e.users_id", "u.id")
+      .where("e.id", id)
+      .first();
   },
   deleteSchoolLog(db, id) {
-    return db("school").where({ id }).delete();
+    return db("entries").where({ id }).delete();
   },
   updateSchoolLog(db, id, newSchoolLogFields) {
-    return db("school").where({ id }).update(newSchoolLogFields);
+    return db("entries").where({ id }).update(newSchoolLogFields);
   },
 };
 module.exports = schoolService;
