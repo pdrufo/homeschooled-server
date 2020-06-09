@@ -102,11 +102,7 @@ schoolRouter
     };
 
     schoolService
-      .updateSchoolLog(
-        req.app.get("db"),
-        req.params.schoolLog.id,
-        schoolLogToUpdate
-      )
+      .updateSchoolLog(req.app.get("db"), req.params.id, schoolLogToUpdate)
       .then((numFieldsAffected) => {
         res.status(204).end();
       })

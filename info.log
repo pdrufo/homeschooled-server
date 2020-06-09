@@ -50,3 +50,5 @@
 {"message":"schoolLog with id 7 deleted","level":"info"}
 {"message":"schoolLog with id 7 not found","level":"error"}
 {"message":"schoolLog with id 7 not found","level":"error"}
+{"message":"schoolLog with id 8 has been created.","level":"info"}
+{"message":"schoolLog with id 5 not found","level":"error"}
