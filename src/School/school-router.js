@@ -9,14 +9,12 @@ const schoolRouter = express.Router();
 
 const serializeSchoolLog = (schoolLog) => ({
   id: schoolLog.id,
-  users_id: schoolLog.users_id,
   school_date: xss(schoolLog.school_date),
+  student: xss(schoolLog.student),
   english: xss(schoolLog.english),
   math: xss(schoolLog.math),
   specialty: xss(schoolLog.specialty),
   notes: schoolLog.notes,
-  first_name: schoolLog.first_name,
-  last_name: schoolLog.last_name,
 });
 
 schoolRouter
@@ -30,15 +28,15 @@ schoolRouter
       .catch(next);
   })
   .post(bodyParser, (req, res, next) => {
-    const { school_date, users_id, english, math, specialty, notes } = req.body;
-    if (!school_date || !users_id || !english || !math || !specialty || !notes) {
+    const { school_date, student, english, math, specialty, notes } = req.body;
+    if (!school_date || !student || !english || !math || !specialty || !notes) {
       logger.error(
-        "school_date, users_id, english, math, specialty, notes are required"
+        "school_date, student, english, math, specialty, notes are required"
       );
     }
     const newSchoolLog = {
       school_date,
-      users_id,
+      student,
       english,
       math,
       specialty,
@@ -93,10 +91,10 @@ schoolRouter
       .catch(next);
   })
   .patch(bodyParser, (req, res, next) => {
-    const { school_date, users_id, english, math, specialty, notes } = req.body;
+    const { school_date, student, english, math, specialty, notes } = req.body;
     const schoolLogToUpdate = {
       school_date,
-      users_id,
+      student,
       english,
       math,
       specialty,
