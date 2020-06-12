@@ -52,3 +52,13 @@
 {"message":"schoolLog with id 7 not found","level":"error"}
 {"message":"schoolLog with id 8 has been created.","level":"info"}
 {"message":"schoolLog with id 5 not found","level":"error"}
+{"message":"schoolLog with id 9 has been created.","level":"info"}
+{"message":"schoolLog with id 8 deleted","level":"info"}
+{"message":"schoolLog with id 10 has been created.","level":"info"}
+{"message":"schoolLog with id 8 not found","level":"error"}
+{"message":"schoolLog with id 5 not found","level":"error"}
+{"message":"schoolLog with id 9 deleted","level":"info"}
+{"message":"schoolLog with id 11 has been created.","level":"info"}
+{"message":"schoolLog with id 10 deleted","level":"info"}
+{"message":"schoolLog with id 12 has been created.","level":"info"}
+{"message":"schoolLog with id 11 deleted","level":"info"}
