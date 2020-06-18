@@ -32,7 +32,7 @@ Adds schoolLog to database
 ## URL
 
 ```javascript
-/api/school-logs;
+/api/school-logs
 ```
 
 - Method
