@@ -2,6 +2,9 @@
 
 The api for the HomeSchool'd app was created with Node JS and is organized around REST. It uses a database with tables for school logs and accpets GET, POST, PATCH and DELETE requests.
 
+## Live Version
+https://homeschooled-client.pdrufo.now.sh/
+
 ## API Utilizes
 
 - Express
